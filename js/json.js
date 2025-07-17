@@ -61,6 +61,16 @@ function showTopFlavors(jsonBody) {
         h2.textContent = topFlavors[i].name;
         p1.textContent = "Calories: " + topFlavors[i].calories;
         p2.textContent = "Type: " + topFlavors[i].type;
+        if (topFlavors[i].calories < 250) {
+            article.style.backgroundColor = "#b9f6c7ff";
+            p1.style.color = "green";
+        }else if (topFlavors[i].calories <= 280) {
+            article.style.backgroundColor = "#fce9acff"
+            p1.style.color = "yellow";
+        }else {
+            article.style.backgroundColor = "#fcaab1ff"
+            p1.style.color = "red";
+        }
         image.setAttribute("src", topFlavors[i].image);
         
         // STEP 10g: Build a loop for the ingredients array in the JSON
@@ -69,11 +79,6 @@ function showTopFlavors(jsonBody) {
         for (let j = 0; j < ingredients.length; j++) {
             let listItem = document.createElement("li"); // <li></li>
             listItem.textContent = ingredients[j]; // <li>Chocolate Syrup</li>
-            // <ul>
-            //      <li></li>
-            //      <li></li>
-            //      <li></li>
-            // </ul>
             list.appendChild(listItem);
         }
 
