@@ -1,30 +1,48 @@
-{
-  "companyName" : "I-Scream Inc.",
-  "headOffice" : "North Pole",
-  "established" : 2025,
-  "active" : true,
-  "topFlavors" : [
     {
-      "name" : "Chocolate Mint",
-      "calories" : 240,
-      "type" : "ice cream",
+        "companyName": "I-Scream Company Inc.",
+        "headOffice": "North Pole",
+        "established": 2025,
+        "active": true,
+        "topFlavors": [{
+            "name": "Chocolate Mint",
+            "calories": 240,
+            "type": "Ice cream",
+            "ingredients": ["Chocolate Syrup", "Peppermint Sprinkle", "Vanilla Base"],
+            "image": "https://sarah-code13.github.io/lesson-10/images/chocolate-mint.svg"
+        }, {
+            "name": "Peach Mango",
+            "calories": 260,
+            "type": "Milkshake-type ice cream",
+            "ingredients": ["Peach Syrup", "Mango Chunks", "Vanilla Base"],
+            "image": "https://sarah-code13.github.io/lesson-10/images/peach-mango.svg"
+        }, {
+            "name": "Strawberry Sprinkle",
+            "calories": 280,
+            "type": "Ice cream",
+            "ingredients": ["Strawberry Syrup", "Strawberry Chunks", "Sprinkles", "Vanilla Base"],
+            "image": "https://sarah-code13.github.io/lesson-10/images/strawberry-sprinkle.svg"
+        },
+    {
+      "name" : "Lemon Sorbet",
+      "calories" : 230,
+      "type" : "Ice Cream Sorbet",
       "ingredients" : [
-        "Chocolate Syrup",
-        "Peppermint Sprinkle",
+        "Lemon Juice",
+        "Lemon Chunks",
         "Vanilla Base"
       ],
-      "image" : "chocolate-mint.svg"
+      "image" : "https://sarah-code13.github.io/lesson-10/images/ice-cream-xtra1.svg"
     },
     {
-      "name" : "Perfect Peach Mango",
-      "calories" : 260,
-      "type" : "Milkshake-type ice cream",
+      "name" : "Cookies and Cream",
+      "calories" : 300,
+      "type" : "Ice Cream",
       "ingredients" : [
-        "Peach Syrup",
-        "Mango Chunks",
+        "Chunked Oreos",
+        "corn syrup",
         "Vanilla Base"
       ],
-      "image" : "peach-mango.svg"
+      "image" : "https://sarah-code13.github.io/lesson-10/images/ice-cream-xtra2.svg"
     }
   ]
 }
